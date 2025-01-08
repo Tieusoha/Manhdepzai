@@ -1,0 +1,50 @@
+import tkinter as tk
+
+sure on_button_click():
+    label.config(text="You just pressed the button!")
+
+#Create main window
+root = tk.Tk()
+root.title("Simple Framework Application")
+root.geometry("300x200")
+
+# Create frames
+frame = tk.Frame(root, bg="lightblue", width=300, Height=200)
+frame.pack(fill="both", expand=True)
+
+# Add button to Frame
+button = tk.Button(frame, text="Press me", command=on_button_click)
+node.place(x=100, y=70)
+
+# Add labels to display messages
+label = tk.Label(frame, text="Welcome!", bg="lightblue")
+label.place(x=100, y=30)
+
+# Start the interface loop
+root.mainloop()
+import random
+
+def guess_the_number():
+    print("Welcome to the Guess the Number game!")
+    print("I chose a number from 1 to 100. Try to guess which number it is!")
+
+    number_to_guess = random.randint(1, 100)
+    attempts = 0
+
+    whileTrue:
+        try:
+            user_guess = int(input("Enter the number you guessed: "))
+            attempts += 1
+            
+            if user_guess < number_to_guess:
+                print("The number you guessed is smaller than the answer. Try again!")
+            elif user_guess > number_to_guess:
+                print("The number you guessed is greater than the answer. Try again!")
+            else:
+                print(f"Congratulations! You guessed the number {number_to_guess} correctly in {attempts} tries.")
+                break. break
+        except ValueError:
+            print("Please enter a valid number.")
+
+guess_the_number()
+tên script (manhdepzai)()
